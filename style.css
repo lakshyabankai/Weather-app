@@ -1,0 +1,346 @@
+css
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #74ebd5,
+        #9face6
+    );
+
+    color: #222;
+}
+
+
+/* =========================================
+   MAIN WEATHER APP
+========================================= */
+
+.weather-app {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.weather-app h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+
+.subtitle {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 15px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.search-box input:focus {
+    border-color: #5c7cfa;
+}
+
+
+.search-box button {
+    padding: 13px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #5c7cfa;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.search-box button:hover {
+    background: #4263eb;
+
+    transform: translateY(-2px);
+}
+
+
+.search-box button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   WEATHER INFORMATION
+========================================= */
+
+.weather-info {
+    padding-top: 10px;
+}
+
+
+.weather-info h2 {
+    font-size: 26px;
+
+    margin-bottom: 5px;
+}
+
+
+.country {
+    color: #888;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   WEATHER ICON
+========================================= */
+
+.weather-icon {
+    font-size: 80px;
+
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   TEMPERATURE
+========================================= */
+
+.temperature {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+
+.condition {
+    font-size: 18px;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   WEATHER DETAILS
+========================================= */
+
+.details {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.detail-box {
+    width: 150px;
+
+    padding: 18px 10px;
+
+    background: #f5f7ff;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7ff;
+}
+
+
+.detail-icon {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+.detail-box p {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.detail-box strong {
+    font-size: 17px;
+
+    color: #333;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.loading {
+    display: none;
+
+    color: #5c7cfa;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error {
+    display: none;
+
+    color: #e03131;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    color: #999;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .weather-app {
+        padding: 30px 20px;
+    }
+
+
+    .weather-app h1 {
+        font-size: 28px;
+    }
+
+
+    .search-box {
+        flex-direction: column;
+    }
+
+
+    .search-box button {
+        width: 100%;
+    }
+
+
+    .temperature {
+        font-size: 48px;
+    }
+
+
+    .details {
+        gap: 10px;
+    }
+
+
+    .detail-box {
+        width: 135px;
+    }
+
+}
+

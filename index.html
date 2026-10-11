@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <!-- Heading -->
+        <h1>Weather App</h1>
+
+        <p class="subtitle">
+            Check the current weather of any city
+        </p>
+
+
+        <!-- Search Section -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Loading Message -->
+        <p id="loading" class="loading">
+            Loading...
+        </p>
+
+
+        <!-- Error Message -->
+        <p id="error" class="error">
+            City not found
+        </p>
+
+
+        <!-- Weather Information -->
+        <div class="weather-info">
+
+            <h2 id="cityName">
+                Search for a city
+            </h2>
+
+            <p id="countryName" class="country">
+                —
+            </p>
+
+
+            <!-- Weather Icon -->
+            <div id="weatherIcon" class="weather-icon">
+                🌤️
+            </div>
+
+
+            <!-- Temperature -->
+            <div id="temperature" class="temperature">
+                --°C
+            </div>
+
+
+            <!-- Weather Condition -->
+            <p id="condition" class="condition">
+                Weather condition
+            </p>
+
+
+            <!-- Weather Details -->
+            <div class="details">
+
+                <div class="detail-box">
+
+                    <div class="detail-icon">
+                        💧
+                    </div>
+
+                    <p>Humidity</p>
+
+                    <strong id="humidity">
+                        --%
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-icon">
+                        💨
+                    </div>
+
+                    <p>Wind Speed</p>
+
+                    <strong id="wind">
+                        -- km/h
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <p class="footer">
+            Weather data by Open-Meteo
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
